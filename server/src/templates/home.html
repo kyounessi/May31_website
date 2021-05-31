@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale= 1.0">
+        <link rel = "stylesheet" type = "text/css" href = "home.css">
+        <script src = "home.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            Welcome to the official Page of Kasra Younessi!
+        </div>
+          
+        <div> <p> Please use the menu to navigate the website. </p></div>
+          
+        <div class = "menu">
+            <a href = "/welcome"><div class = "sub" onmouseover = "welcomeToggle()" onmouseout = "mouseOut()">Welcome</div></a>
+            <a href = "/cv"><div class = "sub" onmouseover = "cvToggle()" onmouseout = "mouseOut()">CV</div></a>
+            <a href = "/avatar"><div class = "sub" onmouseover = "avatarToggle()" onmouseout = "mouseOut()">Avatar</div></a>
+            <a href = "/personal"><div class = "sub" onmouseover = "personalToggle()" onmouseout = "mouseOut()">Personal</div></a>
+            <a href = "/education"><div class = "sub" onmouseover = "educationToggle()" onmouseout = "mouseOut()">Education</div></a>
+            <a href = "/project"><div class = "sub" onmouseover = "projectToggle()" onmouseout = "mouseOut()">Project</div></a>
+            <a href = "/about"><div class = "sub" onmouseover = "aboutToggle()" onmouseout = "mouseOut()">About us</div></a>  
+        </div>
+        <div class = "message" id = "one">
+            <p>Sign into the guestbook and look over the names that already have.</p>
+        </div>
+        <div class = "message" id = "two">
+            <p> Look over my personal resume.</p>
+        </div>
+        <div class = "message" id = "three">
+            <p>View my avatar image.</p>
+        </div>
+        <div class = "message" id = "four">
+            <p> View my legal name and email as a JSON response.</p>
+        </div>
+        <div class = "message" id = "five">
+            <p>View my educational background as a JSON response.</p>
+        </div>
+        <div class = "message" id = "six">
+            <p>Dig deeper into the details of our team members and project. (JSON)</p>
+        </div>
+        <div class = "message" id = "seven">
+            <p>Learn more about the UI/UX details of our Smartdoor.</p>
+        </div>
+          
+        <div class = "team">
+            <div class = "menu-header">Team Members' Resumes</div>
+            <a href="http://128.199.15.251/"><div onmouseover = "" onmouseout = "">Dong</div></a>
+            <a href="http://161.35.228.53/"><div onmouseover = "" onmouseout = "">Anwar</div></a>
+            <a href="http://64.227.107.46/"><div onmouseover = "" onmouseout = "">Isis</div></a>
+        </div>
+          
+          
+          
+        <div class = "iadesign">
+            <p class = "underline"> Wireframe of IA Design:</p>
+            <p>Firstly the users will be introduced to the homepage which will look fairly straight forward. We have already developed a basic login page that will hold
+          credentials in a database. The reason for this is that each individual that uses our product will have their own "faces" that will be recognized.</p>
+            <p>Once logged in, we plan to have a simple interface with a few buttons similar to the Tello Drone controller.</p>
+            <p>We will have an area for the camera feed (strictly for taking a photo and then displaying it, not a live feed) and buttons to add this photo to the list of recognized faces. Since this area will be empty in the beginning (no photo = no display) we plan to have simple instructions demonstrating how to set up accounts and users.</p>
+            <p>There will be a text list of users that are associated with the account, basically people who are able to operate the door. Adding new users will have 2 steps : taking the picture such that it satisifies the user, and adding the picture to the database. Editing users will redirect users to a new page in which they can choose which entries to delete or change the names. Changing the photo associated with that name may be a possible implementation.</p>
+            <p>Whenever users want to operate the door or simply test it, they can click scan face which will run the proper procedures to compare the current face in front of the webcam to the pictures stored in the database.</p>
+            <p>Here is a basic layout that will most likely be changed in the future</p>
+            <p>Once logged in users will have the option to log out (will be added later). There is only currently 2 routes for users to directly access, which is the login page and the actual app interface, which is called index.html.</p>
+            <p>Using simple buttons seemed like the most logical choice since every option we have on our interface is simply yes or no, so there was not much need for special checkboxes or radio buttons.</p>
+            
+        </div>
+    </body>
+</html>

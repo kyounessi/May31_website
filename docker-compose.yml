@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+
+  web-server:
+    build:
+      context: ./server
+    ports:
+      - 80:4444
+    env_file:
+      ./credentials.env
+    volumes:
+      - ./server/src:/app
+    container_name: my-webserver
+
+  db-server:
+    image: mysql:latest
+    restart: always
+    env_file:
+      ./credentials.env
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db:/var/lib/mysql 
+    container_name: my-db
+
+volumes:
+  database:

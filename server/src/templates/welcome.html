@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale= 1.0">
+        <link rel = "stylesheet" type = "text/css" href = "welcome.css">
+        <script src = "welcome.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            Welcome to the guestbook page
+        </div>
+        <div class = "home">
+            <a href = "/">Return Home</a>
+        </div>
+        <div>
+            <p>Use the form to join the table below.</p>
+        </div>
+        <div class = "content">
+            Comment char limit: 50 characters
+        </div>
+        <div class = "guestbook">
+            <p class = "click-me">Guest Book</p>
+            <form id = "info" method = "POST">
+                <label for "f-name">First Name</label>
+                <br><input type = "text" name = "f-name" id = "f-name">
+                <br><label for "l-name">Last Name</label>
+                <br><input type = "text" name = "l-name" id = "l-name">
+                <br><label for "emails">Email</label>
+                <br><input type = "text" name = "emails" id = "emails">
+                <br><label for "comment">Comment</label>
+                <br><input type = "text" name = "comment" id = "comment">
+                <br><input type = "submit" formaction = "/add_info" onclick = "send_info()">
+            </form>
+        </div>
+        
+        <div class = "content">
+            Previous Guests
+        </div>
+
+        <br><div class = "database-records">
+          <table class="records">
+            <thead>
+                <tr>
+                    <th> First Name </th>
+                    <th> Last Name </th>
+                    <th> Email </th>
+                    <th> Comment</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                <tr>
+                    <td> {{user[0]}} </td>
+                    <td> {{user[1]}} </td>
+                    <td> {{user[2]}} </td>
+                    <td> {{user[3]}} </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+
+    </body>
+</html>

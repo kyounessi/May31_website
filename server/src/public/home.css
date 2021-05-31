@@ -1,0 +1,150 @@
+:root{
+    --blue-1: #B0C4DE;
+    --blue-2: #4169E1;
+    --blue-3: #87CEFA;
+    --white: #F8F8FF;
+    --black: #000000;
+    --background:#FAEBD7;
+}
+  
+body{
+    font-size: 1.6em;
+}
+  
+.header{
+    background: var(--blue-1);
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+    font-variant-caps: petite-caps;
+    border: solid 2px var(--black);
+}
+  
+.menu{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 1rem;
+    background: var(--blue-2);
+  
+    
+}
+  
+.menu div{
+    border: 2px solid var(--black);
+    padding:5px;
+    
+}
+  
+  
+.menu a{
+    text-decoration:none;
+    color: var(--white);
+    
+}
+  
+.title{
+    text-decoration:underline;
+}
+  
+.message{
+    background: var(--background);
+    border:3px solid var(--black);
+    padding:10px;
+    
+}
+  
+.sub:hover{
+    
+      background:var(--blue-1);
+}
+  
+#one{
+    position:relative;
+    opacity:0;
+    
+}
+  
+  
+#two{
+    position:relative;
+    bottom:4.15em;
+    opacity:0;
+    
+}
+  
+#three{
+    position:relative;
+    bottom:8.3em;
+    opacity:0;
+}
+  
+#four{
+    position:relative;
+    bottom:12.45em;
+    opacity:0;
+    
+}
+  
+#five{
+    position:relative;
+    bottom: 16.6em;
+    opacity:0;
+}
+  
+#six{
+    position:relative;
+    bottom: 20.75em;
+    opacity:0;
+    
+}
+  
+#seven{
+    position:relative;
+    bottom: 24.9em;
+    opacity:0;
+    
+}
+  
+  
+.iadesign{
+    border:2px solid var(--black);
+    position:relative;
+    bottom:21em;
+    background: var(--background);
+    padding:4px;
+}
+  
+.underline{
+    text-decoration:underline;
+}
+  
+.team{
+    position:relative;
+    width:22%;
+    bottom:23em;
+    
+    
+}
+  
+.menu-header{
+    background: var(--background);
+    padding:5px;
+    border:2px solid var(--black);
+}
+  
+.team a{
+    text-decoration:none;
+    color:var(--white);
+    background:var(--blue-2);
+    display:block;
+    padding:5px;
+    border:1px solid var(--black);
+}
+  
+.team a:hover{
+    background: var(--blue-1);
+}
+  
